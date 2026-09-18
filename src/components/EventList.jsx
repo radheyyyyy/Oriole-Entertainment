@@ -4,13 +4,13 @@ import { FileText, CalendarDays } from 'lucide-react';
 const EventList = () => {
   const events = [
     { 
-      id: "FY '26-27 Tours.pdf", 
+      id: "FY '26-27 Tours_compressed.pdf", 
       name: "Financial Year 2026-27 Plans", 
       description: "Our comprehensive touring plans and strategy for the upcoming financial year.",
       type: "Tour Plan"
     },
     { 
-      id: "Talkatora Shows Deck.pdf", 
+      id: "Talkatora Shows Deck_compressed.pdf", 
       name: "Talkatora Shows", 
       description: "Details and sponsorship opportunities for our upcoming mega shows at Talkatora Stadium.",
       type: "Venue Deck"
