@@ -9,40 +9,17 @@ const ArtistList = () => {
   useEffect(() => {
     const dummyData = [
   {
-    id: "KANAN GILL- ORIOLE SPONSORSHIP DECK.pdf",
-    name: "Kanan Gill",
-    image: "kanan-gill.jpg",
-    description: "Top standup comedian known for his witty humor and observational comedy.",
+    id: "Bassi Sponsorship.Deck (2).pdf",
+    name: "Anubhav Singh Bassi",
+    image: "bassi.jpg",
+    description: "Master of relatable anecdotes and storytelling.",
     shows: [
-      "Feb 20, 2027 - Delhi",
-      "Feb 21, 2027 - Delhi",
-      "To Be Announced"
-    ],
-    instagram: "https://www.instagram.com/kanangill/"
-  },
-
-  {
-    id: "Sonu Nigam x Aura Vibes.pdf",
-    name: "Sonu Nigam",
-    image: "sonu-nigam.jpg",
-    description: "Legendary playback singer with a soulful voice.",
-    shows: [
-      "Nov 22, 2026 - Kolkata",
       "Nov 28, 2026 - Mumbai",
-      "Dec 12, 2026 - Ahmedabad"
+      "Nov 29, 2026 - Mumbai",
+      "Dec 12, 2026 - Delhi"
     ],
-    instagram: "https://www.instagram.com/sonunigamofficial/"
+    instagram: "https://www.instagram.com/be_a_bassi/"
   },
-
-  {
-    id: "Osho Jain .pdf",
-    name: "Osho Jain",
-    image: "osho-jain.jpg",
-    description: "Indie singer-songwriter weaving magic with his acoustic tunes.",
-    shows: ["To Be Announced"],
-    instagram: "https://www.instagram.com/oshojain_/"
-  },
-
   {
     id: "Harsh Gujral sponsorship deck.pdf",
     name: "Harsh Gujral",
@@ -55,73 +32,6 @@ const ArtistList = () => {
     ],
     instagram: "https://www.instagram.com/realharshgujral/"
   },
-
-  {
-    id: "Amit Tandon (2).pdf",
-    name: "Amit Tandon",
-    image: "amit-tandon.png",
-    description: "The married guy comedy, highly relatable for family audiences.",
-    shows: ["To Be Announced"],
-    instagram: "https://www.instagram.com/amitandon17/"
-  },
-
-  {
-    id: "Avinash Gupta.pdf",
-    name: "Avinash Gupta",
-    image: "avinash-gupta.jpg",
-    description: "Rising star with a unique blend of storytelling.",
-    shows: [
-      "Jan 3, 2027 - Mumbai",
-      "Jan 16, 2027 - Raipur",
-      "Jan 17, 2027 - Nagpur"
-    ],
-    instagram: "https://www.instagram.com/just.avinashgupta/"
-  },
-
-  {
-    id: "Bassi Sponsorship.Deck (2).pdf",
-    name: "Anubhav Singh Bassi",
-    image: "bassi.jpg",
-    description: "Master of relatable anecdotes and storytelling.",
-    shows: [
-      "Nov 28, 2026 - Mumbai",
-      "Nov 29, 2026 - Mumbai",
-      "Dec 12, 2026 - Delhi"
-    ],
-    instagram: "https://www.instagram.com/be_a_bassi/"
-  },
-
-  {
-    id: "Khan Saab (3).pdf",
-    name: "Khan Saab",
-    image: "khan-saab.png",
-    description: "Soulful Punjabi and Sufi singer.",
-    shows: ["To Be Announced"],
-    instagram: "https://www.instagram.com/realkhansaab/"
-  },
-
-  {
-    id: "Lakhwinder Wadali Deck (1).pdf",
-    name: "Lakhwinder Wadali",
-    image: "lakhwinder-wadali.jpg",
-    description: "Renowned classical and Sufi artist.",
-    shows: [
-      "Oct 24, 2026 - Jaipur",
-      "Oct 31, 2026 - Hyderabad",
-      "Nov 14, 2026 - Ahmedabad"
-    ],
-    instagram: "https://www.instagram.com/lakhwinderwadaliofficial/"
-  },
-
-  {
-    id: "Rabbi Shergill  (1).pdf",
-    name: "Rabbi Shergill",
-    image: "rabbi-shergill.jpg",
-    description: "Sufi rock pioneer with thought-provoking lyrics.",
-    shows: ["To Be Announced"],
-    instagram: "https://www.instagram.com/rabbishergill/"
-  },
-
   {
     id: "Ravi Gupta Sponsorship Deck (2).pdf",
     name: "Ravi Gupta",
@@ -134,7 +44,86 @@ const ArtistList = () => {
     ],
     instagram: "https://www.instagram.com/shudhdesicomic/"
   },
-
+  {
+    id: "KANAN GILL- ORIOLE SPONSORSHIP DECK.pdf",
+    name: "Kanan Gill",
+    image: "kanan-gill.jpg",
+    description: "Top standup comedian known for his witty humor and observational comedy.",
+    shows: [
+      "Feb 20, 2027 - Delhi",
+      "Feb 21, 2027 - Delhi",
+      "To Be Announced"
+    ],
+    instagram: "https://www.instagram.com/kanangill/"
+  },
+  {
+    id: "Sonu Nigam x Aura Vibes.pdf",
+    name: "Sonu Nigam",
+    image: "sonu-nigam.jpg",
+    description: "Legendary playback singer with a soulful voice.",
+    shows: [
+      "Nov 22, 2026 - Kolkata",
+      "Nov 28, 2026 - Mumbai",
+      "Dec 12, 2026 - Ahmedabad"
+    ],
+    instagram: "https://www.instagram.com/sonunigamofficial/"
+  },
+  {
+    id: "Osho Jain .pdf",
+    name: "Osho Jain",
+    image: "osho-jain.jpg",
+    description: "Indie singer-songwriter weaving magic with his acoustic tunes.",
+    shows: ["To Be Announced"],
+    instagram: "https://www.instagram.com/oshojain_/"
+  },
+  {
+    id: "Amit Tandon (2).pdf",
+    name: "Amit Tandon",
+    image: "amit-tandon.png",
+    description: "The married guy comedy, highly relatable for family audiences.",
+    shows: ["To Be Announced"],
+    instagram: "https://www.instagram.com/amitandon17/"
+  },
+  {
+    id: "Avinash Gupta.pdf",
+    name: "Avinash Gupta",
+    image: "avinash-gupta.jpg",
+    description: "Rising star with a unique blend of storytelling.",
+    shows: [
+      "Jan 3, 2027 - Mumbai",
+      "Jan 16, 2027 - Raipur",
+      "Jan 17, 2027 - Nagpur"
+    ],
+    instagram: "https://www.instagram.com/just.avinashgupta/"
+  },
+  {
+    id: "Khan Saab (3).pdf",
+    name: "Khan Saab",
+    image: "khan-saab.png",
+    description: "Soulful Punjabi and Sufi singer.",
+    shows: ["To Be Announced"],
+    instagram: "https://www.instagram.com/realkhansaab/"
+  },
+  {
+    id: "Lakhwinder Wadali Deck (1).pdf",
+    name: "Lakhwinder Wadali",
+    image: "lakhwinder-wadali.jpg",
+    description: "Renowned classical and Sufi artist.",
+    shows: [
+      "Oct 24, 2026 - Jaipur",
+      "Oct 31, 2026 - Hyderabad",
+      "Nov 14, 2026 - Ahmedabad"
+    ],
+    instagram: "https://www.instagram.com/lakhwinderwadaliofficial/"
+  },
+  {
+    id: "Rabbi Shergill  (1).pdf",
+    name: "Rabbi Shergill",
+    image: "rabbi-shergill.jpg",
+    description: "Sufi rock pioneer with thought-provoking lyrics.",
+    shows: ["To Be Announced"],
+    instagram: "https://www.instagram.com/rabbishergill/"
+  },
   {
     id: "Ruchika Lohiya - Chikka Deck (1).pdf",
     name: "Ruchika Lohiya (Chikka)",
@@ -143,7 +132,6 @@ const ArtistList = () => {
     shows: ["To Be Announced"],
     instagram: "https://www.instagram.com/__chikka/"
   },
-
   {
     id: "_Akanksha Grover Sponsership Deck_talkatora.pdf.pdf",
     name: "Akanksha Grover",
@@ -165,7 +153,7 @@ const ArtistList = () => {
 
   return (
     <section className="artists-section">
-      <h2>Our Roster</h2>
+      <h2>Upcoming Tours</h2>
       {loading ? (
         <p style={{ textAlign: 'center' }}>Loading artists...</p>
       ) : (
