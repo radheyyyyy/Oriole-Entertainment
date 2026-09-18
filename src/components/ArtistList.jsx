@@ -9,7 +9,7 @@ const ArtistList = () => {
   useEffect(() => {
     const dummyData = [
   {
-    id: "Bassi Sponsorship.Deck (2).pdf",
+    id: "Bassi Sponsorship.Deck (2)_compressed.pdf",
     name: "Anubhav Singh Bassi",
     image: "bassi.jpg",
     description: "Master of relatable anecdotes and storytelling.",
@@ -21,7 +21,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/be_a_bassi/"
   },
   {
-    id: "Harsh Gujral sponsorship deck.pdf",
+    id: "Harsh Gujral sponsorship deck_compressed.pdf",
     name: "Harsh Gujral",
     image: "harsh-gujral.jpg",
     description: "High-energy standup comedian with great crowd work.",
@@ -33,7 +33,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/realharshgujral/"
   },
   {
-    id: "Ravi Gupta Sponsorship Deck (2).pdf",
+    id: "Ravi Gupta Sponsorship Deck (2)_compressed.pdf",
     name: "Ravi Gupta",
     image: "ravi-gupta.jpg",
     description: "Observational comedy that hits right at home.",
@@ -45,7 +45,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/shudhdesicomic/"
   },
   {
-    id: "KANAN GILL- ORIOLE SPONSORSHIP DECK.pdf",
+    id: "KANAN GILL- ORIOLE SPONSORSHIP DECK_compressed.pdf",
     name: "Kanan Gill",
     image: "kanan-gill.jpg",
     description: "Top standup comedian known for his witty humor and observational comedy.",
@@ -57,7 +57,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/kanangill/"
   },
   {
-    id: "Sonu Nigam x Aura Vibes.pdf",
+    id: "Sonu Nigam x Aura Vibes_compressed.pdf",
     name: "Sonu Nigam",
     image: "sonu-nigam.jpg",
     description: "Legendary playback singer with a soulful voice.",
@@ -69,7 +69,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/sonunigamofficial/"
   },
   {
-    id: "Osho Jain .pdf",
+    id: "Osho Jain  (1)_compressed.pdf",
     name: "Osho Jain",
     image: "osho-jain.jpg",
     description: "Indie singer-songwriter weaving magic with his acoustic tunes.",
@@ -77,7 +77,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/oshojain_/"
   },
   {
-    id: "Amit Tandon (2).pdf",
+    id: "Amit Tandon (2)_compressed.pdf",
     name: "Amit Tandon",
     image: "amit-tandon.png",
     description: "The married guy comedy, highly relatable for family audiences.",
@@ -85,7 +85,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/amitandon17/"
   },
   {
-    id: "Avinash Gupta.pdf",
+    id: "Avinash Gupta_compressed.pdf",
     name: "Avinash Gupta",
     image: "avinash-gupta.jpg",
     description: "Rising star with a unique blend of storytelling.",
@@ -97,7 +97,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/just.avinashgupta/"
   },
   {
-    id: "Khan Saab (3).pdf",
+    id: "Khan Saab (3)_compressed.pdf",
     name: "Khan Saab",
     image: "khan-saab.png",
     description: "Soulful Punjabi and Sufi singer.",
@@ -105,7 +105,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/realkhansaab/"
   },
   {
-    id: "Lakhwinder Wadali Deck (1).pdf",
+    id: "Lakhwinder Wadali Deck (1)_compressed.pdf",
     name: "Lakhwinder Wadali",
     image: "lakhwinder-wadali.jpg",
     description: "Renowned classical and Sufi artist.",
@@ -117,7 +117,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/lakhwinderwadaliofficial/"
   },
   {
-    id: "Rabbi Shergill  (1).pdf",
+    id: "Rabbi Shergill  (1)_compressed.pdf",
     name: "Rabbi Shergill",
     image: "rabbi-shergill.jpg",
     description: "Sufi rock pioneer with thought-provoking lyrics.",
@@ -125,7 +125,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/rabbishergill/"
   },
   {
-    id: "Ruchika Lohiya - Chikka Deck (1).pdf",
+    id: "Ruchika Lohiya - Chikka Deck (1)_compressed.pdf",
     name: "Ruchika Lohiya (Chikka)",
     image: "ruchika-lohiya.jpg",
     description: "Hilarious and witty comic taking the internet by storm.",
@@ -133,7 +133,7 @@ const ArtistList = () => {
     instagram: "https://www.instagram.com/__chikka/"
   },
   {
-    id: "_Akanksha Grover Sponsership Deck_talkatora.pdf.pdf",
+    id: "_Akanksha Grover Sponsership Deck_talkatora.pdf_compressed.pdf",
     name: "Akanksha Grover",
     image: "akanksha-grover.jpg",
     description: "Engaging and dynamic performer.",
