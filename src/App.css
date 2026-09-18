@@ -28,6 +28,7 @@ main {
   margin-bottom: var(--spacing-md);
   background: linear-gradient(135deg, var(--text-main) 0%, var(--text-muted) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   opacity: 0;
@@ -294,6 +295,7 @@ main {
   color: var(--accent) !important;
   margin-bottom: var(--spacing-sm);
   -webkit-line-clamp: 1 !important;
+  line-clamp: 1 !important;
 }
 
 .btn-secondary {

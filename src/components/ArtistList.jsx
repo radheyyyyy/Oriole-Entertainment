@@ -536,7 +536,7 @@ const ArtistList = () => {
                 </div>
                 
                 <div className="card-shows">
-                  <h4 className="shows-title"><Calendar size={18} /> Upcoming Shows</h4>
+                  <h4 className="shows-title"><Calendar size={18} /> Key Upcoming Shows</h4>
                   <div className="shows-table-container inline-shows">
                     {Object.entries(grouped).map(([monthYear, showsList]) => (
                       <div key={monthYear} className="month-group">
