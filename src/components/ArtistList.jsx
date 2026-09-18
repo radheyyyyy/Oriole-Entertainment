@@ -8,7 +8,7 @@ const ArtistList = () => {
   useEffect(() => {
     const dummyData = [
   {
-    id: "KANAN GILL- ORIOLE SPONSORSHIP DECK.pdf",
+    id: "KANAN GILL- ORIOLE SPONSORSHIP DECK_compressed.pdf",
     name: "Kanan Gill",
     image: "kanan-gill.jpg",
     description: "Top standup comedian known for his witty humor and observational comedy.",
@@ -20,7 +20,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Sonu Nigam x Aura Vibes.pdf",
+    id: "Sonu Nigam x Aura Vibes_compressed.pdf",
     name: "Sonu Nigam",
     image: "sonu-nigam.jpg",
     description: "Legendary playback singer with a soulful voice.",
@@ -35,7 +35,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Osho Jain .pdf",
+    id: "Osho Jain  (1)_compressed.pdf",
     name: "Osho Jain",
     image: "osho-jain.jpg",
     description: "Indie singer-songwriter weaving magic with his acoustic tunes.",
@@ -46,7 +46,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Harsh Gujral sponsorship deck.pdf",
+    id: "Harsh Gujral sponsorship deck_compressed.pdf",
     name: "Harsh Gujral",
     image: "harsh-gujral.jpg",
     description: "High-energy standup comedian with great crowd work.",
@@ -118,7 +118,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Amit Tandon (2).pdf",
+    id: "Amit Tandon (2)_compressed.pdf",
     name: "Amit Tandon",
     image: "amit-tandon.png",
     description: "The married guy comedy, highly relatable for family audiences.",
@@ -129,7 +129,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Avinash Gupta.pdf",
+    id: "Avinash Gupta_compressed.pdf",
     name: "Avinash Gupta",
     image: "avinash-gupta.jpg",
     description: "Rising star with a unique blend of storytelling.",
@@ -153,7 +153,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Bassi Sponsorship.Deck (2).pdf",
+    id: "Bassi Sponsorship.Deck (2)_compressed.pdf",
     name: "Anubhav Singh Bassi",
     image: "bassi.jpg",
     description: "Master of relatable anecdotes and storytelling.",
@@ -167,7 +167,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Khan Saab (3).pdf",
+    id: "Khan Saab (3)_compressed.pdf",
     name: "Khan Saab",
     image: "khan-saab.png",
     description: "Soulful Punjabi and Sufi singer.",
@@ -178,7 +178,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Lakhwinder Wadali Deck (1).pdf",
+    id: "Lakhwinder Wadali Deck (1)_compressed.pdf",
     name: "Lakhwinder Wadali",
     image: "lakhwinder-wadali.jpg",
     description: "Renowned classical and Sufi artist.",
@@ -199,7 +199,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Rabbi Shergill  (1).pdf",
+    id: "Rabbi Shergill  (1)_compressed.pdf",
     name: "Rabbi Shergill",
     image: "rabbi-shergill.jpg",
     description: "Sufi rock pioneer with thought-provoking lyrics.",
@@ -210,7 +210,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Ravi Gupta Sponsorship Deck (2).pdf",
+    id: "Ravi Gupta Sponsorship Deck (2)_compressed.pdf",
     name: "Ravi Gupta",
     image: "ravi-gupta.jpg",
     description: "Observational comedy that hits right at home.",
@@ -285,7 +285,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "Ruchika Lohiya - Chikka Deck (1).pdf",
+    id: "Ruchika Lohiya - Chikka Deck (1)_compressed.pdf",
     name: "Ruchika Lohiya (Chikka)",
     image: "ruchika-lohiya.jpg",
     description: "Hilarious and witty comic taking the internet by storm.",
@@ -296,7 +296,7 @@ const ArtistList = () => {
   },
 
   {
-    id: "_Akanksha Grover Sponsership Deck_talkatora.pdf.pdf",
+    id: "_Akanksha Grover Sponsership Deck_talkatora.pdf_compressed.pdf",
     name: "Akanksha Grover",
     image: "akanksha-grover.jpg",
     description: "Engaging and dynamic performer.",
@@ -309,7 +309,7 @@ const ArtistList = () => {
   {
     id: "Karma Live  October 2026_compressed.pdf",
     name: "Karma",
-    image: "  ma.jpg",
+    image: "karma.jpg",
     description: "Dynamic rapper and hip-hop artist with hard-hitting lyrics.",
     shows: ["To Be Announced"],
     instagram: "https://www.instagram.com/karmathelekhak/?hl=en"
