@@ -458,7 +458,7 @@ const ArtistList = () => {
       {
         id: "Hargun Kaur _compressed.pdf",
         name: "Hargun Kaur",
-        image: "Hargun-Kaur.jpg",
+        image: "hargun-kaur.jpg",
         description: "Versatile singer and performer known for her captivating voice.",
         shows: ["To Be Announced"],
         instagram: "https://www.instagram.com/iamhargunkaur/?hl=en"
