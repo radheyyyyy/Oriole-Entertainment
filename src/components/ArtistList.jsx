@@ -462,6 +462,14 @@ const ArtistList = () => {
         description: "Versatile singer and performer known for her captivating voice.",
         shows: ["To Be Announced"],
         instagram: "https://www.instagram.com/iamhargunkaur/?hl=en"
+      },
+      {
+        id: "Vikas Kush Sharma _compressed.pdf",
+        name: "Vikas Kush Sharma",
+        image: "vikas-kush-sharma.png",
+        description: "Standup comedian known for his hilarious and engaging performances.",
+        shows: ["To Be Announced"],
+        instagram: "https://www.instagram.com/vikaskushsharma/?hl=en"
       }
     ];
 
