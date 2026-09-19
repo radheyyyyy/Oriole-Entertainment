@@ -5,6 +5,7 @@ import ArtistList from './components/ArtistList';
 import EventList from './components/EventList';
 import Footer from './components/Footer';
 import './App.css';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <EventList />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
