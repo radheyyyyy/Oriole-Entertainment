@@ -470,6 +470,14 @@ const ArtistList = () => {
         description: "Standup comedian known for his hilarious and engaging performances.",
         shows: ["To Be Announced"],
         instagram: "https://www.instagram.com/vikaskushsharma/?hl=en"
+      },
+      {
+        id: "Splash n Play 2027.pdf",
+        name: "Splash n Play",
+        image: "splash-n-play.png",
+        description: "Splash N Play — A family-friendly kids entertainment experience featuring water slides, splash pools, foam parties, adventure activities, games, mascots and interactive experiences.",
+        shows: ["To Be Announced"],
+        instagram: "https://www.instagram.com/splash.n.play/"
       }
     ];
 
