@@ -454,6 +454,13 @@ const ArtistList = () => {
         description: "Soulful voice exploring depths of human emotions through music.",
         shows: ["To Be Announced"],
         instagram: "https://www.instagram.com/bharatchauhan_/"
+      },
+      {
+        id: "Hargun Kaur _compressed.pdf",
+        name: "Hargun Kaur",
+        image: "hargun-kaur.jpg",
+        description: "Versatile singer and performer known for her captivating voice.",
+        shows: ["To Be Announced"]
       }
     ];
 

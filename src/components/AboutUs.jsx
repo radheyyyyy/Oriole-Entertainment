@@ -8,7 +8,7 @@ const AboutUs = () => {
         <div className="about-text-column">
           <h2><span className="text-accent">ABOUT</span> US</h2>
           <p>
-            <strong>High-Profile Solo Tours & Blockbusters:</strong> Fan-favorite headliners anchor the calendar, featuring massive return runs of Anubhav Singh Bassi’s hit show Kisi Ko Batana Mat and Harsh Gujral’s Harsh'O'Ullas, alongside prominent acts by comics like Ravi Gupta (Kal ki Chinta Nahi Karta), Priya Malik (Ishq Hai), and Amit Tandon (Aise kaise).
+            <strong>Flagship Show & Touring Production:</strong> Fan-favorite headliners anchor the calendar, featuring massive return runs of Anubhav Singh Bassi’s hit show Kisi Ko Batana Mat and Harsh Gujral’s Harsh'O'Ullas, alongside prominent acts by comics like Ravi Gupta (Kal ki Chinta Nahi Karta), Priya Malik (Ishq Hai), and Amit Tandon (Aise kaise).
           </p>
           <p>
             <strong>Experimental & Trial Solos:</strong> Keeping true to grassroots comedy development, the lineup provides a platform for fresh material and upcoming trial solos, including Naman Jain’s Imperfectly Yours, Tushar Basra’s Bali Ka Basra, Shubham Shandilya’s RageBait, and Vikas Kush Sharma’s Halki Halki Fati?
