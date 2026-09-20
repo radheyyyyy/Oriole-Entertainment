@@ -32,7 +32,7 @@ const ArtistList = () => {
 
       {
         id: "hifaf",
-        name: "3rd Edition of HIFAF",
+        name: "HIFAF",
         image: "hifaf.jpg",
         description: "Himalayan Indie Film and Arts Festival.",
         shows: [
@@ -460,7 +460,7 @@ const ArtistList = () => {
         name: "Hargun Kaur",
         image: "hargun-kaur.jpg",
         description: "Versatile singer and performer known for her captivating voice.",
-        shows: ["To Be Announced"],
+        shows: ["Oct 4, 2026 - CP 67 Mohali"],
         instagram: "https://www.instagram.com/iamhargunkaur/?hl=en"
       },
       {
