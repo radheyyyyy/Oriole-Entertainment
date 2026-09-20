@@ -223,7 +223,7 @@ const ArtistList = () => {
       {
         id: "Bassi Sponsorship.Deck (2)_compressed.pdf",
         name: "Anubhav Singh Bassi",
-        image: "bassi.jpg",
+        image: "bassi.png",
         description: "Master of relatable anecdotes and storytelling.",
         shows: [
           "Sep 11, 2026 - Ahmedabad",
