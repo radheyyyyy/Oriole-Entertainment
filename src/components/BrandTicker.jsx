@@ -2,7 +2,7 @@ import React from 'react';
 
 // Brand list extracted from the "Collaborated With Brands" image + Gifting Partners image
 const brands = [
-  { name: 'Siggnature', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png', useName: true, nameStyle: { fontStyle: 'italic', fontFamily: 'Georgia, serif', color: '#1a1a2e' } },
+  { name: 'Siggnature', logo: null, useName: true, nameStyle: { fontStyle: 'italic', fontFamily: 'Georgia, serif', color: '#1a1a2e', fontWeight: '700' } },
   { name: 'Central Park', logo: null, useName: true, nameStyle: { color: '#2d7a2d', fontWeight: '700' } },
   { name: 'Red FM 93.5', logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Red_FM_93.5_Logo.svg/1200px-Red_FM_93.5_Logo.svg.png', useName: false },
   { name: 'Nalis', logo: null, useName: true, nameStyle: { color: '#111', fontWeight: '800', letterSpacing: '2px' } },
@@ -36,7 +36,7 @@ const brands = [
   { name: 'Love Beauty & Planet', logo: null, useName: true, nameStyle: { color: '#d63384', fontWeight: '700' } },
   { name: 'Liquid I.V.', logo: null, useName: true, nameStyle: { color: '#00aaff', fontWeight: '700' } },
   { name: 'Rentomojo', logo: null, useName: true, nameStyle: { color: '#e63946', fontWeight: '700' } },
-  { name: 'Lensكart', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lenskart_Logo.png/220px-Lenskart_Logo.png', useName: true, nameStyle: { color: '#0077b6', fontWeight: '700' } },
+  { name: 'Lenskart', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lenskart_Logo.png/220px-Lenskart_Logo.png', useName: false },
   { name: 'Housing.com', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Housing.com_Logo.png/220px-Housing.com_Logo.png', useName: false },
   { name: 'LEGO', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/1280px-LEGO_logo.svg.png', useName: false },
   // Gifting Partners
