@@ -641,9 +641,9 @@ main {
 .brand-ticker-track {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
   width: max-content;
-  animation: ticker-scroll 60s linear infinite;
+  animation: ticker-scroll 65s linear infinite;
   padding: 1rem 0;
 }
 
@@ -661,39 +661,54 @@ main {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 56px;
+  height: 72px;
   padding: 0 1.5rem;
-  background: var(--bg-color);
+  background: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  min-width: 120px;
-  max-width: 200px;
+  min-width: 140px;
+  max-width: 220px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .brand-ticker-item:hover {
   border-color: var(--accent);
-  box-shadow: 0 4px 16px rgba(255, 71, 87, 0.15);
+  box-shadow: 0 6px 24px rgba(255, 71, 87, 0.18);
+}
+
+.brand-dark-bg {
+  background: #1a1a1a;
+  border-color: #444;
+}
+
+.brand-dark-bg:hover {
+  border-color: var(--accent);
 }
 
 .brand-logo-img {
-  max-height: 36px;
-  max-width: 140px;
+  max-height: 44px;
+  max-width: 160px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(30%);
-  transition: filter 0.3s ease;
+  filter: grayscale(15%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+  will-change: transform;
+  display: block;
 }
 
 .brand-ticker-item:hover .brand-logo-img {
+  transform: scale(1.2);
   filter: grayscale(0%);
 }
 
-.brand-name-text {
+.brand-name-fallback {
   font-family: var(--font-heading);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-muted);
   white-space: nowrap;
-  line-height: 1;
 }
 
 /* ─────────────────────────────────────────────────────────────────
