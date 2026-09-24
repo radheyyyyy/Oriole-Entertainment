@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Calendar, ExternalLink, FileText, Link2 } from 'lucide-react';
+import { X, Calendar, ExternalLink, FileText, Link2, Lock } from 'lucide-react';
 
 const ArtistList = () => {
   const [artists, setArtists] = useState([]);
@@ -191,7 +191,15 @@ const ArtistList = () => {
         shows: [
           "To Be Announced"
         ],
-        instagram: "https://www.instagram.com/amitandon17/"
+        instagram: "https://www.instagram.com/amitandon17/",
+        sponsorship: {
+          titleSponsor: {
+            status: 'sponsored',
+            sponsorName: 'NAWGATI',
+            logo: '/images/brands/nawgati_dark.svg'
+          },
+          coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+        }
       },
 
       {
@@ -262,7 +270,11 @@ const ArtistList = () => {
           "Dec 19, 2026 - Prayagraj",
           "Dec 20, 2026 - Riwa"
         ],
-        instagram: "https://www.instagram.com/be_a_bassi/"
+        instagram: "https://www.instagram.com/be_a_bassi/",
+        sponsorship: {
+          titleSponsor: { status: 'locked', label: 'LOCKED' },
+          coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+        }
       },
 
       {
@@ -313,7 +325,15 @@ const ArtistList = () => {
         shows: [
           "To Be Announced"
         ],
-        instagram: "https://www.instagram.com/rabbishergill/"
+        instagram: "https://www.instagram.com/rabbishergill/",
+        sponsorship: {
+          titleSponsor: {
+            status: 'sponsored',
+            sponsorName: 'NAWGATI',
+            logo: '/images/brands/nawgati_dark.svg'
+          },
+          coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+        }
       },
 
       {
@@ -581,6 +601,38 @@ const ArtistList = () => {
                     </div>
                   </div>
                 </div>
+
+                {artist.sponsorship && (
+                  <div className="artist-sponsorship-block">
+                    <div className="sponsorship-row">
+                      <span className="sponsorship-slot-label">Title Sponsor:</span>
+                      {artist.sponsorship.titleSponsor.status === 'locked' && (
+                        <span className="sponsorship-badge badge-locked">
+                          <Lock size={13} className="sponsor-lock-icon" />
+                          <span>LOCKED</span>
+                        </span>
+                      )}
+                      {artist.sponsorship.titleSponsor.status === 'sponsored' && (
+                        <span className="sponsorship-badge badge-nawgati-light" title="Title Sponsor: NAWGATI">
+                          <img
+                            src={artist.sponsorship.titleSponsor.logo}
+                            alt={artist.sponsorship.titleSponsor.sponsorName}
+                            className="nawgati-full-logo"
+                          />
+                        </span>
+                      )}
+                    </div>
+                    <div className="sponsorship-row">
+                      <span className="sponsorship-slot-label">Co-Powered By:</span>
+                      {artist.sponsorship.coPoweredBy.status === 'available' && (
+                        <span className="sponsorship-badge badge-available">
+                          <span className="pulse-indicator-dot" />
+                          <span>AVAILABLE</span>
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                )}
 
                 <div className="card-shows">
                   <h4 className="shows-title"><Calendar size={18} /> Upcoming Shows</h4>
