@@ -678,6 +678,19 @@ main {
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.12);
 }
 
+.badge-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.badge-available.badge-link:hover {
+  background: rgba(16, 185, 129, 0.22);
+  border-color: #10b981;
+  color: #047857;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
+}
+
 .pulse-indicator-dot {
   width: 8px;
   height: 8px;

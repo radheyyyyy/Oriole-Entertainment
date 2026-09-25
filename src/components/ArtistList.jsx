@@ -214,6 +214,7 @@ const ArtistList = () => {
           "Sep 27, 2026 - Surat",
           "Oct 9, 2026 - Mohali",
           "Oct 11, 2026 - Mumbai",
+          "Oct 18, 2026 - Shanmukhanand, Mumbai",
           "Oct 25, 2026 - Bengaluru",
           "Nov 15, 2026 - Indore",
           "Dec 6, 2026 - Bengaluru",
@@ -272,7 +273,7 @@ const ArtistList = () => {
         ],
         instagram: "https://www.instagram.com/be_a_bassi/",
         sponsorship: {
-          titleSponsor: { status: 'locked', label: 'LOCKED' },
+          titleSponsor: { status: 'available', label: 'AVAILABLE' },
           coPoweredBy: { status: 'available', label: 'AVAILABLE' }
         }
       },
@@ -452,7 +453,7 @@ const ArtistList = () => {
         image: "akanksha-grover.jpg",
         description: "Engaging and dynamic performer.",
         shows: [
-          "To Be Announced"
+          "Nov 20, 2026 - Kolkata"
         ],
         instagram: "https://www.instagram.com/akankssha.groverr/"
       },
@@ -621,14 +622,28 @@ const ArtistList = () => {
                           />
                         </span>
                       )}
+                      {artist.sponsorship.titleSponsor.status === 'available' && (
+                        <a
+                          href="mailto:brands@orioleentertainment.com"
+                          className="sponsorship-badge badge-available badge-link"
+                          title="Contact brands@orioleentertainment.com"
+                        >
+                          <span className="pulse-indicator-dot" />
+                          <span>AVAILABLE</span>
+                        </a>
+                      )}
                     </div>
                     <div className="sponsorship-row">
                       <span className="sponsorship-slot-label">Co-Powered By:</span>
                       {artist.sponsorship.coPoweredBy.status === 'available' && (
-                        <span className="sponsorship-badge badge-available">
+                        <a
+                          href="mailto:brands@orioleentertainment.com"
+                          className="sponsorship-badge badge-available badge-link"
+                          title="Contact brands@orioleentertainment.com"
+                        >
                           <span className="pulse-indicator-dot" />
                           <span>AVAILABLE</span>
-                        </span>
+                        </a>
                       )}
                     </div>
                   </div>
