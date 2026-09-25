@@ -453,7 +453,9 @@ const ArtistList = () => {
         image: "akanksha-grover.jpg",
         description: "Engaging and dynamic performer.",
         shows: [
-          "Nov 20, 2026 - Kolkata"
+          "Nov 20, 2026 - Kolkata",
+          "Jan 20, 2027 - Delhi",
+          "Feb 27, 2027 - Mumbai"
         ],
         instagram: "https://www.instagram.com/akankssha.groverr/"
       },
