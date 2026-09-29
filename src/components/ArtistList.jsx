@@ -468,7 +468,14 @@ const ArtistList = () => {
         shows: [
           "Oct 11, 2026 - New Delhi"
         ],
-        instagram: "https://www.instagram.com/karmathelekhak/?hl=en"
+        instagram: "https://www.instagram.com/karmathelekhak/?hl=en",
+        sponsorship: {
+          titleSponsor: {
+            status: 'sponsored',
+            sponsorName: 'NAWGATI',
+            logo: '/images/brands/nawgati_dark.svg'
+          }
+        }
       },
       {
         id: "Bharat Chauhan  (1)_compressed.pdf",
@@ -501,6 +508,13 @@ const ArtistList = () => {
         description: "Splash N Play — A family-friendly kids entertainment experience featuring water slides, splash pools, foam parties, adventure activities, games, mascots and interactive experiences.",
         shows: ["To Be Announced"],
         instagram: "https://www.instagram.com/splash.n.play/"
+      },
+      {
+        id: "tfe",
+        name: "TFE - There Is Funny Everywhere",
+        image: "tfe.png",
+        description: "A stand-up comedy show that travels across India to discover the next wave of comedians.",
+        shows: ["To Be Announced"]
       }
     ];
 
@@ -607,47 +621,51 @@ const ArtistList = () => {
 
                 {artist.sponsorship && (
                   <div className="artist-sponsorship-block">
-                    <div className="sponsorship-row">
-                      <span className="sponsorship-slot-label">Title Sponsor:</span>
-                      {artist.sponsorship.titleSponsor.status === 'locked' && (
-                        <span className="sponsorship-badge badge-locked">
-                          <Lock size={13} className="sponsor-lock-icon" />
-                          <span>LOCKED</span>
-                        </span>
-                      )}
-                      {artist.sponsorship.titleSponsor.status === 'sponsored' && (
-                        <span className="sponsorship-badge badge-nawgati-light" title="Title Sponsor: NAWGATI">
-                          <img
-                            src={artist.sponsorship.titleSponsor.logo}
-                            alt={artist.sponsorship.titleSponsor.sponsorName}
-                            className="nawgati-full-logo"
-                          />
-                        </span>
-                      )}
-                      {artist.sponsorship.titleSponsor.status === 'available' && (
-                        <a
-                          href="mailto:brands@orioleentertainment.com"
-                          className="sponsorship-badge badge-available badge-link"
-                          title="Contact brands@orioleentertainment.com"
-                        >
-                          <span className="pulse-indicator-dot" />
-                          <span>AVAILABLE</span>
-                        </a>
-                      )}
-                    </div>
-                    <div className="sponsorship-row">
-                      <span className="sponsorship-slot-label">Co-Powered By:</span>
-                      {artist.sponsorship.coPoweredBy.status === 'available' && (
-                        <a
-                          href="mailto:brands@orioleentertainment.com"
-                          className="sponsorship-badge badge-available badge-link"
-                          title="Contact brands@orioleentertainment.com"
-                        >
-                          <span className="pulse-indicator-dot" />
-                          <span>AVAILABLE</span>
-                        </a>
-                      )}
-                    </div>
+                    {artist.sponsorship.titleSponsor && (
+                      <div className="sponsorship-row">
+                        <span className="sponsorship-slot-label">Title Sponsor:</span>
+                        {artist.sponsorship.titleSponsor.status === 'locked' && (
+                          <span className="sponsorship-badge badge-locked">
+                            <Lock size={13} className="sponsor-lock-icon" />
+                            <span>LOCKED</span>
+                          </span>
+                        )}
+                        {artist.sponsorship.titleSponsor.status === 'sponsored' && (
+                          <span className="sponsorship-badge badge-nawgati-light" title="Title Sponsor: NAWGATI">
+                            <img
+                              src={artist.sponsorship.titleSponsor.logo}
+                              alt={artist.sponsorship.titleSponsor.sponsorName}
+                              className="nawgati-full-logo"
+                            />
+                          </span>
+                        )}
+                        {artist.sponsorship.titleSponsor.status === 'available' && (
+                          <a
+                            href="mailto:brands@orioleentertainment.com"
+                            className="sponsorship-badge badge-available badge-link"
+                            title="Contact brands@orioleentertainment.com"
+                          >
+                            <span className="pulse-indicator-dot" />
+                            <span>AVAILABLE</span>
+                          </a>
+                        )}
+                      </div>
+                    )}
+                    {artist.sponsorship.coPoweredBy && (
+                      <div className="sponsorship-row">
+                        <span className="sponsorship-slot-label">Co-Powered By:</span>
+                        {artist.sponsorship.coPoweredBy.status === 'available' && (
+                          <a
+                            href="mailto:brands@orioleentertainment.com"
+                            className="sponsorship-badge badge-available badge-link"
+                            title="Contact brands@orioleentertainment.com"
+                          >
+                            <span className="pulse-indicator-dot" />
+                            <span>AVAILABLE</span>
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </div>
                 )}
 
