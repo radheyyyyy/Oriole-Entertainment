@@ -532,7 +532,8 @@ const ArtistList = () => {
 
   const openPdf = (filename) => {
     // Open the PDF from the public/pdfs directory
-    window.open(`/pdfs/${encodeURIComponent(filename)}`, '_blank');
+    const fileToOpen = filename.toLowerCase().endsWith('.pdf') ? filename : `${filename}.pdf`;
+    window.open(`/pdfs/${encodeURIComponent(fileToOpen)}`, '_blank');
   };
 
   const groupShowsByMonth = (shows) => {
@@ -587,7 +588,9 @@ const ArtistList = () => {
                       src={`/images/${artist.image}`}
                       alt={artist.name}
                       className="artist-image"
+                      loading="lazy"
                       onError={(e) => {
+                        e.currentTarget.onerror = null;
                         if (e.target.src !== fallbackAvatar) {
                           e.target.src = fallbackAvatar;
                         }
@@ -636,6 +639,10 @@ const ArtistList = () => {
                               src={artist.sponsorship.titleSponsor.logo}
                               alt={artist.sponsorship.titleSponsor.sponsorName}
                               className="nawgati-full-logo"
+                              loading="lazy"
+                              onError={(e) => {
+                                e.currentTarget.style.display = 'none';
+                              }}
                             />
                           </span>
                         )}

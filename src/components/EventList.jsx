@@ -20,7 +20,8 @@ const EventList = () => {
   ];
 
   const openPdf = (filename) => {
-    window.open(`/pdfs/${encodeURIComponent(filename)}`, '_blank');
+    const fileToOpen = filename.toLowerCase().endsWith('.pdf') ? filename : `${filename}.pdf`;
+    window.open(`/pdfs/${encodeURIComponent(fileToOpen)}`, '_blank');
   };
 
   return (
@@ -66,7 +67,14 @@ const EventList = () => {
       {/* ── Standard event cards ─────────────────────────────────── */}
       <div className="event-grid">
         {events.map((event) => (
-          <div key={event.id} className="event-card" onClick={() => openPdf(event.id)}>
+          <div 
+            key={event.id} 
+            className="event-card" 
+            onClick={() => openPdf(event.id)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') openPdf(event.id); }}
+          >
             <div className="event-icon">
               <CalendarDays size={40} color="var(--accent)" />
             </div>
