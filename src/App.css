@@ -40,9 +40,6 @@ main {
   width: 90%;
   height: auto;
   margin-bottom: var(--spacing-lg);
-  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  opacity: 0;
-  transform: translateY(20px);
 }
 
 .sr-only {
@@ -74,6 +71,8 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
 }
 
 .about-container {
