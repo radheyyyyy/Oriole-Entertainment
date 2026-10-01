@@ -510,7 +510,7 @@ const ArtistList = () => {
         instagram: "https://www.instagram.com/splash.n.play/"
       },
       {
-        id: "tfe",
+        id: "TFE DECK (1)-compressed.pdf",
         name: "TFE - There Is Funny Everywhere",
         image: "tfe.png",
         description: "A stand-up comedy show that travels across India to discover the next wave of comedians.",
