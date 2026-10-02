@@ -515,6 +515,22 @@ const ArtistList = () => {
         image: "tfe.png",
         description: "A stand-up comedy show that travels across India to discover the next wave of comedians.",
         shows: ["To Be Announced"]
+      },
+      {
+        id: "NO WAY Comedy Festival_compressed.pdf",
+        name: "NO WAY! Comedy Festival",
+        image: "no-way-comedy-festival.jpg",
+        description: "India's biggest multi-genre comedy festival - 3 days of stand-up headliners, poetry, open mics & after-parties. City Takeover: Bangalore at Jayamahal Palace.",
+        shows: [
+          "Feb 12, 2027 - Bangalore (Jayamahal Palace)",
+          "Feb 13, 2027 - Bangalore (Jayamahal Palace)",
+          "Feb 14, 2027 - Bangalore (Jayamahal Palace)"
+        ],
+        instagram: "https://www.instagram.com/nowaycomedyfestival/",
+        sponsorship: {
+          titleSponsor: { status: 'available', label: 'AVAILABLE' },
+          coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+        }
       }
     ];
 
