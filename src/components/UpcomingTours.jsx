@@ -455,12 +455,12 @@ const rawArtistsData = [
     instagram: "https://www.instagram.com/karmathelekhak/?hl=en"
   },
   {
-    id: "Bharat Chauhan  (1)_compressed.pdf",
+    id: "Oriole Bharat Chauhan deck  (2)_compressed.pdf",
     name: "Bharat Chauhan",
-    image: "bharat-chauhan.png",
+    image: "bharat-chauhan.jpg",
     description: "Soulful voice exploring depths of human emotions through music.",
     shows: ["To Be Announced"],
-    instagram: "https://www.instagram.com/bharatchauhan_/"
+    instagram: "https://www.instagram.com/bharatchauhanmusic/?hl=en"
   },
   {
     id: "Hargun Kaur _compressed.pdf",

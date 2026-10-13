@@ -44,7 +44,8 @@ const artists = [
   { name: "Khan Saab", image: "/images/khan-saab.png", fallback: "/portfolio/3.png", link: 'https://www.instagram.com/realkhansaab/' },
   { name: "Lakhwinder Wadali", image: "/images/lakhwinder-wadali.jpg", fallback: "/portfolio/1.png", link: 'https://www.instagram.com/lakhwinderwadaliofficial/' },
   { name: "Rabbi Shergill", image: "/images/rabbi-shergill.jpg", fallback: "/portfolio/2.png", link: 'https://www.instagram.com/rabbishergill/' },
-  { name: "Ruchika Lohiya", image: "/images/ruchika-lohiya.jpg", fallback: "/portfolio/20.jpg", link: 'https://www.instagram.com/__chikka/' }
+  { name: "Ruchika Lohiya", image: "/images/ruchika-lohiya.jpg", fallback: "/portfolio/20.jpg", link: 'https://www.instagram.com/__chikka/' },
+  { name: "Bharat Chauhan", image: "/images/bharat-chauhan.jpg", fallback: "/images/bharat-chauhan.jpg", link: 'https://www.instagram.com/bharatchauhanmusic/?hl=en' }
 ];
 
 export default function ArtistsPage() {
