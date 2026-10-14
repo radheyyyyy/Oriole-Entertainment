@@ -75,6 +75,7 @@ const BrandItem = ({ brand }) => {
           className="brand-logo-img"
           onError={() => setHasError(true)}
           loading="lazy"
+          decoding="async"
         />
       ) : (
         <span className="brand-name-fallback">{brand.name}</span>

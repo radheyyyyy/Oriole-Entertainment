@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Calendar, ExternalLink, FileText, Link2, Lock } from 'lucide-react';
+import { Calendar, FileText, Lock } from 'lucide-react';
 
 const ArtistList = () => {
   const [artists, setArtists] = useState([]);
@@ -22,7 +22,7 @@ const ArtistList = () => {
       {
         id: "shilpa-rao",
         name: "Shilpa Rao",
-        image: "shilpa rao.jpg",
+        image: "shilpa-rao.jpg",
         description: "Renowned playback singer known for her soulful voice and chart-topping hits.",
         shows: [
           "To Be Announced"
@@ -601,10 +601,13 @@ const ArtistList = () => {
                 <div className="artist-header">
                   <div className="artist-image-container">
                     <img
-                      src={`/images/${artist.image}`}
+                      src={encodeURI(`/images/${artist.image}`)}
                       alt={artist.name}
                       className="artist-image"
                       loading="lazy"
+                      decoding="async"
+                      width="150"
+                      height="150"
                       onError={(e) => {
                         e.currentTarget.onerror = null;
                         if (e.target.src !== fallbackAvatar) {

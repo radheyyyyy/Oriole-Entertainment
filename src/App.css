@@ -10,7 +10,8 @@ main {
 }
 
 .hero-section {
-  min-height: 80vh;
+  min-height: 75vh;
+  min-height: 75dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +24,7 @@ main {
 }
 
 .hero-section h1 {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(2.4rem, 7vw, 5rem);
   letter-spacing: -0.02em;
   margin-bottom: var(--spacing-md);
   background: linear-gradient(135deg, var(--text-main) 0%, var(--text-muted) 100%);
@@ -36,10 +37,11 @@ main {
 }
 
 .hero-logo {
-  max-width: 400px;
-  width: 90%;
+  max-width: 380px;
+  width: 85%;
   height: auto;
   margin-bottom: var(--spacing-lg);
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.06));
 }
 
 .sr-only {
@@ -55,9 +57,11 @@ main {
 }
 
 .hero-section p {
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
   color: var(--text-muted);
   max-width: 600px;
+  padding: 0 0.5rem;
+  line-height: 1.6;
   animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: 0.2s;
   opacity: 0;
@@ -71,8 +75,6 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  content-visibility: auto;
-  contain-intrinsic-size: 800px;
 }
 
 .about-container {
@@ -95,7 +97,7 @@ main {
 }
 
 .about-text-column h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: var(--spacing-lg);
   color: var(--text-main);
 }
@@ -172,7 +174,7 @@ main {
 
 .artist-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
   gap: var(--spacing-lg);
 }
 
@@ -182,6 +184,7 @@ main {
   border-radius: var(--radius-md);
   padding: var(--spacing-lg);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
   position: relative;
   overflow: hidden;
@@ -201,6 +204,7 @@ main {
   border: 3px solid var(--border-color);
   background-color: var(--bg-color);
   transition: border-color 0.4s ease;
+  flex-shrink: 0;
 }
 
 .artist-image {
@@ -214,7 +218,7 @@ main {
 }
 .artists-section h2,
 .events-section h2 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
   margin-bottom: var(--spacing-lg);
   text-align: center;
 }
@@ -257,7 +261,7 @@ main {
 
 .event-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: var(--spacing-lg);
   max-width: 900px;
   margin: 0 auto;
@@ -421,6 +425,7 @@ main {
   gap: var(--spacing-md);
   max-height: 400px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding-right: var(--spacing-sm);
 }
 
@@ -782,6 +787,9 @@ main {
   width: max-content;
   animation: ticker-scroll 85s linear infinite;
   padding: 1.5rem 0;
+  will-change: transform;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .brand-ticker-track:hover {
@@ -990,16 +998,172 @@ main {
 
 @media (max-width: 600px) {
   .big-lineup-card {
-    padding: var(--spacing-lg);
+    padding: 1.25rem 1rem;
+    margin-bottom: var(--spacing-lg);
   }
   .big-lineup-show-info {
-    gap: var(--spacing-lg);
+    gap: 0.75rem;
+    flex-direction: column;
   }
   .big-lineup-header {
     flex-direction: column;
+    gap: 1rem;
   }
   .btn-lineup-deck {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   MOBILE & iOS SAFARI OPTIMIZATIONS
+───────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 1rem 2rem;
+  }
+  .hero-logo {
+    max-width: 280px;
+    width: 75%;
+  }
+
+  .brand-ticker-section {
+    padding: var(--spacing-lg) 0;
+  }
+  .brand-ticker-title {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+  }
+  .brand-ticker-subtitle {
+    font-size: 0.88rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .brand-ticker-track {
+    gap: 1.25rem;
+    padding: 0.75rem 0;
+    animation-duration: 55s;
+  }
+  .brand-ticker-item {
+    min-width: 150px;
+    max-width: 190px;
+    height: 74px;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+  }
+  .brand-logo-img {
+    max-height: 42px;
+    max-width: 115px;
+  }
+  .brand-name-fallback {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .artist-card {
+    padding: 1.25rem 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .artist-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.85rem;
+  }
+  .artist-image-container {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 0.25rem;
+  }
+  .artist-info {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .artist-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+  .card-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .card-actions .btn-small,
+  .card-actions .social-button {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 110px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .artist-sponsorship-block {
+    padding: 8px 10px;
+  }
+  .sponsorship-row {
+    justify-content: center;
+    gap: 6px;
+  }
+  .sponsorship-slot-label {
+    font-size: 0.75rem;
+  }
+  .sponsorship-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+  .nawgati-full-logo {
+    height: 15px;
+  }
+  .shows-title {
+    justify-content: center;
+  }
+  .inline-shows {
+    max-height: 220px;
+  }
+  .shows-table th,
+  .shows-table td {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.82rem;
+  }
+  .shows-table th:first-child,
+  .shows-table td:first-child {
+    width: 52%;
+  }
+}
+
+@media (max-width: 480px) {
+  .artist-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .about-text-column p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  .big-lineup-title {
+    font-size: 1.45rem;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .brand-ticker-track {
+    animation: none;
+    overflow-x: auto;
+  }
+  .hero-section h1,
+  .hero-section p {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

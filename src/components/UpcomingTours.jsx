@@ -18,7 +18,7 @@ const rawArtistsData = [
   {
     id: "shilpa-rao",
     name: "Shilpa Rao",
-    image: "shilpa rao.jpg",
+    image: "shilpa-rao.jpg",
     description: "Renowned playback singer known for her soulful voice and chart-topping hits.",
     shows: [
       "To Be Announced"
