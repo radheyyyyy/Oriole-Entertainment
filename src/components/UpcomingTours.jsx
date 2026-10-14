@@ -92,12 +92,7 @@ const rawArtistsData = [
     image: "harsh-gujral.jpg",
     description: "High-energy standup comedian with great crowd work.",
     shows: [
-      "Oct 2, 2026 - Nagpur",
-      "Oct 3, 2026 - Kolkata",
-      "Oct 4, 2026 - Patna",
-      "Oct 9, 2026 - Delhi",
-      "Oct 10, 2026 - Ghaziabad",
-      "Oct 11, 2026 - Noida",
+     
       "Oct 16, 2026 - Nasik",
       "Oct 17, 2026 - Pune",
       "Oct 18, 2026 - Mumbai",
@@ -199,12 +194,7 @@ const rawArtistsData = [
     image: "avinash-gupta.jpg",
     description: "Rising star with a unique blend of storytelling.",
     shows: [
-      "Sep 12, 2026 - Raipur",
-      "Sep 13, 2026 - Nagpur",
-      "Sep 26, 2026 - Vadodara",
-      "Sep 27, 2026 - Surat",
-      "Oct 9, 2026 - Mohali",
-      "Oct 11, 2026 - Mumbai",
+      
       "Oct 18, 2026 - Shanmukhanand, Mumbai",
       "Oct 25, 2026 - Bengaluru",
       "Nov 15, 2026 - Indore",
@@ -225,20 +215,7 @@ const rawArtistsData = [
     image: "bassi.jpg",
     description: "Master of relatable anecdotes and storytelling.",
     shows: [
-      "Sep 11, 2026 - Ahmedabad",
-      "Sep 12, 2026 - Vadodara",
-      "Sep 13, 2026 - Surat",
-      "Sep 18, 2026 - TBA",
-      "Sep 19, 2026 - Chennai",
-      "Sep 20, 2026 - Hyderabad",
-      "Sep 25, 2026 - Kurukshetra",
-      "Sep 26, 2026 - Ludhiana",
-      "Sep 27, 2026 - Chandigarh",
-      "Oct 3, 2026 - Dehradun",
-      "Oct 4, 2026 - Roorkee / Dehradun",
-      "Oct 9, 2026 - TBA",
-      "Oct 10, 2026 - Jammu",
-      "Oct 11, 2026 - Srinagar",
+     
       "Oct 16, 2026 - Mysore",
       "Oct 17, 2026 - Bangalore",
       "Oct 23, 2026 - Sagar",
@@ -450,7 +427,7 @@ const rawArtistsData = [
     image: "karma.jpg",
     description: "Dynamic rapper and hip-hop artist with hard-hitting lyrics.",
     shows: [
-      "Oct 11, 2026 - New Delhi"
+      "To be announced - New Delhi"
     ],
     instagram: "https://www.instagram.com/karmathelekhak/?hl=en"
   },
