@@ -222,7 +222,7 @@ const ArtistList = () => {
       },
 
       {
-        id: "Bassi Sponsorship.Deck (2)_compressed.pdf",
+        id: "bassideck44.pdf",
         name: "Anubhav Singh Bassi",
         image: "bassi.jpg",
         description: "Master of relatable anecdotes and storytelling.",
