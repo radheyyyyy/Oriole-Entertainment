@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, FileText, Lock } from 'lucide-react';
+import { X, Calendar, ExternalLink, FileText, Link2, Lock } from 'lucide-react';
 
 const ArtistList = () => {
   const [artists, setArtists] = useState([]);
@@ -22,7 +22,7 @@ const ArtistList = () => {
       {
         id: "shilpa-rao",
         name: "Shilpa Rao",
-        image: "shilpa-rao.jpg",
+        image: "shilpa rao.jpg",
         description: "Renowned playback singer known for her soulful voice and chart-topping hits.",
         shows: [
           "To Be Announced"
@@ -99,15 +99,7 @@ const ArtistList = () => {
         image: "harsh-gujral.jpg",
         description: "High-energy standup comedian with great crowd work.",
         shows: [
-          "Oct 2, 2026 - Nagpur",
-          "Oct 3, 2026 - Kolkata",
-          "Oct 4, 2026 - Patna",
-          "Oct 9, 2026 - Delhi",
-          "Oct 10, 2026 - Ghaziabad",
-          "Oct 11, 2026 - Noida",
-          "Oct 16, 2026 - Nasik",
-          "Oct 17, 2026 - Pune",
-          "Oct 18, 2026 - Mumbai",
+        
           "Oct 23, 2026 - Bangalore",
           "Oct 24, 2026 - Chennai",
           "Oct 25, 2026 - Goa",
@@ -235,22 +227,7 @@ const ArtistList = () => {
         image: "bassi.jpg",
         description: "Master of relatable anecdotes and storytelling.",
         shows: [
-          "Sep 11, 2026 - Ahmedabad",
-          "Sep 12, 2026 - Vadodara",
-          "Sep 13, 2026 - Surat",
-          "Sep 18, 2026 - TBA",
-          "Sep 19, 2026 - Chennai",
-          "Sep 20, 2026 - Hyderabad",
-          "Sep 25, 2026 - Kurukshetra",
-          "Sep 26, 2026 - Ludhiana",
-          "Sep 27, 2026 - Chandigarh",
-          "Oct 3, 2026 - Dehradun",
-          "Oct 4, 2026 - Roorkee / Dehradun",
-          "Oct 9, 2026 - TBA",
-          "Oct 10, 2026 - Jammu",
-          "Oct 11, 2026 - Srinagar",
-          "Oct 16, 2026 - Mysore",
-          "Oct 17, 2026 - Bangalore",
+          
           "Oct 23, 2026 - Sagar",
           "Oct 24, 2026 - Bhopal",
           "Oct 25, 2026 - Indore",
@@ -268,8 +245,11 @@ const ArtistList = () => {
           "Dec 12, 2026 - Delhi",
           "Dec 13, 2026 - Delhi",
           "Dec 18, 2026 - Lucknow",
-          "Dec 19, 2026 - Prayagraj",
-          "Dec 20, 2026 - Riwa"
+          "Dec 19, 2026 - Kormangala, Bengaluru",
+          "Dec 20, 2026 - Kormangala, Bengaluru",
+          "Dec 26, 2026 - Yashobhoomi , Delhi",
+          "Dec 27, 2026 - Yashobhoomi, Delhi",
+        
         ],
         instagram: "https://www.instagram.com/be_a_bassi/",
         sponsorship: {
@@ -478,12 +458,12 @@ const ArtistList = () => {
         }
       },
       {
-        id: "Oriole Bharat Chauhan deck  (2)_compressed.pdf",
+        id: "Bharat Chauhan  (1)_compressed.pdf",
         name: "Bharat Chauhan",
-        image: "bharat-chauhan.jpg",
+        image: "bharat-chauhan.png",
         description: "Soulful voice exploring depths of human emotions through music.",
         shows: ["To Be Announced"],
-        instagram: "https://www.instagram.com/bharatchauhanmusic/?hl=en"
+        instagram: "https://www.instagram.com/bharatchauhan_/"
       },
       {
         id: "Hargun Kaur _compressed.pdf",
@@ -510,27 +490,11 @@ const ArtistList = () => {
         instagram: "https://www.instagram.com/splash.n.play/"
       },
       {
-        id: "TFE DECK (1)-compressed.pdf",
+        id: "tfe",
         name: "TFE - There Is Funny Everywhere",
         image: "tfe.png",
         description: "A stand-up comedy show that travels across India to discover the next wave of comedians.",
         shows: ["To Be Announced"]
-      },
-      {
-        id: "NO WAY Comedy Festival_compressed.pdf",
-        name: "NO WAY! Comedy Festival",
-        image: "no-way-comedy-festival.jpg",
-        description: "India's biggest multi-genre comedy festival - 3 days of stand-up headliners, poetry, open mics & after-parties. City Takeover: Bangalore at Jayamahal Palace.",
-        shows: [
-          "Feb 12, 2027 - Bangalore (Jayamahal Palace)",
-          "Feb 13, 2027 - Bangalore (Jayamahal Palace)",
-          "Feb 14, 2027 - Bangalore (Jayamahal Palace)"
-        ],
-        instagram: "https://www.instagram.com/nowaycomedyfestival/",
-        sponsorship: {
-          titleSponsor: { status: 'available', label: 'AVAILABLE' },
-          coPoweredBy: { status: 'available', label: 'AVAILABLE' }
-        }
       }
     ];
 
@@ -548,8 +512,7 @@ const ArtistList = () => {
 
   const openPdf = (filename) => {
     // Open the PDF from the public/pdfs directory
-    const fileToOpen = filename.toLowerCase().endsWith('.pdf') ? filename : `${filename}.pdf`;
-    window.open(`/pdfs/${encodeURIComponent(fileToOpen)}`, '_blank');
+    window.open(`/pdfs/${encodeURIComponent(filename)}`, '_blank');
   };
 
   const groupShowsByMonth = (shows) => {
@@ -601,15 +564,10 @@ const ArtistList = () => {
                 <div className="artist-header">
                   <div className="artist-image-container">
                     <img
-                      src={encodeURI(`/images/${artist.image}`)}
+                      src={`/images/${artist.image}`}
                       alt={artist.name}
                       className="artist-image"
-                      loading="lazy"
-                      decoding="async"
-                      width="150"
-                      height="150"
                       onError={(e) => {
-                        e.currentTarget.onerror = null;
                         if (e.target.src !== fallbackAvatar) {
                           e.target.src = fallbackAvatar;
                         }
@@ -658,10 +616,6 @@ const ArtistList = () => {
                               src={artist.sponsorship.titleSponsor.logo}
                               alt={artist.sponsorship.titleSponsor.sponsorName}
                               className="nawgati-full-logo"
-                              loading="lazy"
-                              onError={(e) => {
-                                e.currentTarget.style.display = 'none';
-                              }}
                             />
                           </span>
                         )}
@@ -745,3 +699,5 @@ const ArtistList = () => {
 };
 
 export default ArtistList;
+
+
