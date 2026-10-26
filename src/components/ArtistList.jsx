@@ -434,7 +434,7 @@ const ArtistList = () => {
         image: "karma.jpg",
         description: "Dynamic rapper and hip-hop artist with hard-hitting lyrics.",
         shows: [
-          "Oct 11, 2026 - New Delhi"
+          "To Be Announced"
         ],
         instagram: "https://www.instagram.com/karmathelekhak/?hl=en",
         sponsorship: {
