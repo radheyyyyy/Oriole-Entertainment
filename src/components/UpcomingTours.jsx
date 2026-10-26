@@ -478,6 +478,17 @@ const rawArtistsData = [
       titleSponsor: { status: 'available', label: 'AVAILABLE' },
       coPoweredBy: { status: 'available', label: 'AVAILABLE' }
     }
+  },
+  {
+    id: "TFE DECK (1)-compressed.pdf",
+    name: "TFE - There Is Funny Everywhere",
+    image: "tfe.png",
+    description: "A stand-up comedy show that travels across India to discover the next wave of comedians.",
+    shows: ["To Be Announced"],
+    sponsorship: {
+      titleSponsor: { status: 'available', label: 'AVAILABLE' },
+      coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+    }
   }
 ];
 

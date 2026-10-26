@@ -100,9 +100,7 @@ const ArtistList = () => {
         description: "High-energy standup comedian with great crowd work.",
         shows: [
         
-          "Oct 23, 2026 - Bangalore",
-          "Oct 24, 2026 - Chennai",
-          "Oct 25, 2026 - Goa",
+        
           "Oct 29, 2026 - Bahrain",
           "Oct 30, 2026 - Doha",
           "Oct 31, 2026 - Oman",
@@ -200,14 +198,7 @@ const ArtistList = () => {
         image: "avinash-gupta.jpg",
         description: "Rising star with a unique blend of storytelling.",
         shows: [
-          "Sep 12, 2026 - Raipur",
-          "Sep 13, 2026 - Nagpur",
-          "Sep 26, 2026 - Vadodara",
-          "Sep 27, 2026 - Surat",
-          "Oct 9, 2026 - Mohali",
-          "Oct 11, 2026 - Mumbai",
-          "Oct 18, 2026 - Shanmukhanand, Mumbai",
-          "Oct 25, 2026 - Bengaluru",
+         
           "Nov 15, 2026 - Indore",
           "Dec 6, 2026 - Bengaluru",
           "Dec 18, 2026 - Ahmedabad",
@@ -228,9 +219,7 @@ const ArtistList = () => {
         description: "Master of relatable anecdotes and storytelling.",
         shows: [
           
-          "Oct 23, 2026 - Sagar",
-          "Oct 24, 2026 - Bhopal",
-          "Oct 25, 2026 - Indore",
+          
           "Nov 13, 2026 - Mumbai",
           "Nov 14, 2026 - Mumbai",
           "Nov 15, 2026 - Mumbai",
@@ -283,7 +272,7 @@ const ArtistList = () => {
         image: "lakhwinder-wadali.jpg",
         description: "Renowned classical and Sufi artist.",
         shows: [
-          "Oct 24, 2026 - Jaipur",
+         
           "Oct 31, 2026 - Hyderabad",
           "Nov 14, 2026 - Ahmedabad",
           "Nov 28, 2026 - Delhi",
@@ -404,8 +393,7 @@ const ArtistList = () => {
         image: "ruchika-lohiya.jpg",
         description: "Hilarious and witty comic taking the internet by storm.",
         shows: [
-          "Oct 24, 2026 - Kanpur",
-          "Oct 25, 2026 - Lucknow",
+        
           "Oct 31, 2026 - Indore",
           "Nov 1, 2026 - Bhopal",
           "Nov 21, 2026 - Chandigarh",
@@ -494,7 +482,11 @@ const ArtistList = () => {
         name: "TFE - There Is Funny Everywhere",
         image: "tfe.png",
         description: "A stand-up comedy show that travels across India to discover the next wave of comedians.",
-        shows: ["To Be Announced"]
+        shows: ["To Be Announced"],
+        sponsorship: {
+          titleSponsor: { status: 'available', label: 'AVAILABLE' },
+          coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+        }
       }
     ];
 
