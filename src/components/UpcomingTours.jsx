@@ -469,9 +469,7 @@ const rawArtistsData = [
     image: "no-way-comedy-festival.jpg",
     description: "India's biggest multi-genre comedy festival - 3 days of stand-up headliners, poetry, open mics & after-parties. City Takeover: Bangalore at Jayamahal Palace.",
     shows: [
-      "Feb 12, 2027 - Bangalore (Jayamahal Palace)",
-      "Feb 13, 2027 - Bangalore (Jayamahal Palace)",
-      "Feb 14, 2027 - Bangalore (Jayamahal Palace)"
+      "To Be Announced"
     ],
     instagram: "https://www.instagram.com/nowaycomedyfestival/",
     sponsorship: {
@@ -492,13 +490,15 @@ const rawArtistsData = [
   }
 ];
 
-// Reorder so Bassi, Harsh Gujral, Ravi Gupta are top 3 (exact order as showcase repo)
+// Reorder so Bassi, Harsh Gujral, Ravi Gupta are top 3; NO WAY! Comedy Festival is always last
 const topArtistsNames = ["Anubhav Singh Bassi", "Harsh Gujral", "Ravi Gupta"];
+const lastArtistsNames = ["NO WAY! Comedy Festival"];
 const orderedArtists = [
   ...rawArtistsData.filter(a => a.name === "Anubhav Singh Bassi"),
   ...rawArtistsData.filter(a => a.name === "Harsh Gujral"),
   ...rawArtistsData.filter(a => a.name === "Ravi Gupta"),
-  ...rawArtistsData.filter(a => !topArtistsNames.includes(a.name))
+  ...rawArtistsData.filter(a => !topArtistsNames.includes(a.name) && !lastArtistsNames.includes(a.name)),
+  ...rawArtistsData.filter(a => a.name === "NO WAY! Comedy Festival")
 ];
 
 function groupShowsByMonth(shows) {

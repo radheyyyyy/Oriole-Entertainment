@@ -487,15 +487,29 @@ const ArtistList = () => {
           titleSponsor: { status: 'available', label: 'AVAILABLE' },
           coPoweredBy: { status: 'available', label: 'AVAILABLE' }
         }
+      },
+      {
+        id: "NO WAY Comedy Festival_compressed.pdf",
+        name: "NO WAY! Comedy Festival",
+        image: "no-way-comedy-festival.jpg",
+        description: "India's biggest multi-genre comedy festival - 3 days of stand-up headliners, poetry, open mics & after-parties. City Takeover: Bangalore at Jayamahal Palace.",
+        shows: ["To Be Announced"],
+        instagram: "https://www.instagram.com/nowaycomedyfestival/",
+        sponsorship: {
+          titleSponsor: { status: 'available', label: 'AVAILABLE' },
+          coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+        }
       }
     ];
 
     const topArtists = ["Anubhav Singh Bassi", "Harsh Gujral", "Ravi Gupta"];
+    const lastArtists = ["NO WAY! Comedy Festival"];
     const reorderedData = [
       ...dummyData.filter(a => a.name === "Anubhav Singh Bassi"),
       ...dummyData.filter(a => a.name === "Harsh Gujral"),
       ...dummyData.filter(a => a.name === "Ravi Gupta"),
-      ...dummyData.filter(a => !topArtists.includes(a.name))
+      ...dummyData.filter(a => !topArtists.includes(a.name) && !lastArtists.includes(a.name)),
+      ...dummyData.filter(a => a.name === "NO WAY! Comedy Festival")
     ];
 
     setArtists(reorderedData);
