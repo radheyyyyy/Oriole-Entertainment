@@ -179,7 +179,7 @@ const ArtistList = () => {
         image: "amit-tandon.png",
         description: "The married guy comedy, highly relatable for family audiences.",
         shows: [
-          "To Be Announced"
+          "19 Dec 2026 - Talkatora Stadium, Delhi",
         ],
         instagram: "https://www.instagram.com/amitandon17/",
         sponsorship: {
