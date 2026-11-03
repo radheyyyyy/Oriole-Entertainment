@@ -252,7 +252,11 @@ const ArtistList = () => {
         ],
         instagram: "https://www.instagram.com/be_a_bassi/",
         sponsorship: {
-          titleSponsor: { status: 'available', label: 'AVAILABLE' },
+          titleSponsor: {
+            status: 'sponsored',
+            sponsorName: 'NAWGATI',
+            logo: '/images/brands/nawgati_dark.svg'
+          },
           coPoweredBy: { status: 'available', label: 'AVAILABLE' }
         }
       },
