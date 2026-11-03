@@ -21,9 +21,19 @@ const rawArtistsData = [
     image: "shilpa-rao.jpg",
     description: "Renowned playback singer known for her soulful voice and chart-topping hits.",
     shows: [
-      "To Be Announced"
+      "March 2027 (Tentative) - Delhi",
+      "March 2027 (Tentative) - Pune",
+      "March 2027 (Tentative) - Jaipur",
+      "March 2027 (Tentative) - Kolkata",
+      "March 2027 (Tentative) - Hyderabad",
+      "March 2027 (Tentative) - Bangalore",
+      "March 2027 (Tentative) - Shanmukhananda, Mumbai"
     ],
-    instagram: "https://www.instagram.com/shilparao/?hl=en"
+    instagram: "https://www.instagram.com/shilparao/?hl=en",
+    sponsorship: {
+      titleSponsor: { status: 'available', label: 'AVAILABLE' },
+      coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+    }
   },
   {
     id: "hifaf",
@@ -504,9 +514,13 @@ const orderedArtists = [
 function groupShowsByMonth(shows) {
   const grouped = {};
   const tba = [];
+  const monthNames = [
+    'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec',
+    'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'
+  ];
 
   shows.forEach(show => {
-    if (show === "To Be Announced" || show.toLowerCase().includes("tba")) {
+    if (show === "To Be Announced" || show.toLowerCase().startsWith("to be announced") || show.toLowerCase().trim() === "tba") {
       tba.push({ original: show });
       return;
     }
@@ -516,9 +530,25 @@ function groupShowsByMonth(shows) {
       const datePart = show.substring(0, splitIndex).trim();
       const cityPart = show.substring(splitIndex + 1).trim();
 
-      const dateWords = datePart.replace(',', '').split(' ');
-      if (dateWords.length >= 3) {
-        const monthYear = `${dateWords[0]} ${dateWords[2]}`;
+      const words = datePart.replace(/,/g, '').split(/\s+/);
+      const foundMonth = words.find(w => monthNames.includes(w.toLowerCase().replace(/[^a-z]/g, '')));
+      const foundYear = words.find(w => /^\d{4}$/.test(w));
+
+      if (foundMonth && foundYear) {
+        const cleanMonth = foundMonth.charAt(0).toUpperCase() + foundMonth.slice(1).toLowerCase();
+        const isTentative = /tentative/i.test(datePart) || /tentative/i.test(show);
+        const monthYear = isTentative ? `${cleanMonth} ${foundYear} (Tentative)` : `${cleanMonth} ${foundYear}`;
+
+        if (!grouped[monthYear]) {
+          grouped[monthYear] = [];
+        }
+
+        const hasDay = words.some(w => /^\d{1,2}(st|nd|rd|th)?$/.test(w));
+        const displayDate = hasDay ? datePart : (isTentative ? 'Tentative' : datePart);
+
+        grouped[monthYear].push({ date: displayDate, city: cityPart, original: show });
+      } else if (words.length >= 3) {
+        const monthYear = `${words[0]} ${words[2]}`;
         if (!grouped[monthYear]) {
           grouped[monthYear] = [];
         }
