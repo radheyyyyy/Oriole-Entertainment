@@ -41,9 +41,9 @@ const rawArtistsData = [
     image: "hifaf.jpg",
     description: "Himalayan Indie Film and Arts Festival.",
     shows: [
-      "Dec 11, 2026 - TBA",
-      "Dec 12, 2026 - TBA",
-      "Dec 13, 2026 - TBA"
+      "Dec 11, 2026 - Devlok, Baragrahan, Manali",
+      "Dec 12, 2026 - Devlok, Baragrahan, Manali",
+      "Dec 13, 2026 - Devlok, Baragrahan, Manali"
     ],
     instagram: "https://www.instagram.com/hifaf_/?hl=en",
     driveLink: {
