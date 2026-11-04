@@ -46,6 +46,10 @@ const rawArtistsData = [
       "Dec 13, 2026 - TBA"
     ],
     instagram: "https://www.instagram.com/hifaf_/?hl=en",
+    driveLink: {
+      name: "Carvaan- After Movies/Shots",
+      url: "https://drive.google.com/drive/folders/1Gb_JhNpGytbxHncJyufrw2mM5oIJrqrc"
+    },
     pdfs: [
       { name: "Mountain Sound", file: "1. MOUNTAIN SOUND LAB_compressed.pdf" },
       { name: "Reforge Himalayas", file: "2. REFORGE THE HIMALAYAS_compressed.pdf" },
@@ -649,6 +653,22 @@ export default function UpcomingTours() {
                           style={{ fontSize: '.82rem' }}
                         >
                           <FileText size={15} /> Deck
+                        </button>
+                      )}
+                      {artist.driveLink && (
+                        <button
+                          className="btn-ghost"
+                          onClick={() => window.open(artist.driveLink.url, '_blank')}
+                          style={{ fontSize: '.82rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                        >
+                          <img
+                            src="/images/brands/google-drive.svg"
+                            alt="Google Drive"
+                            width="15"
+                            height="15"
+                            style={{ objectFit: 'contain', flexShrink: 0 }}
+                          />
+                          {artist.driveLink.name}
                         </button>
                       )}
                     </div>

@@ -51,6 +51,10 @@ const ArtistList = () => {
           "Dec 13, 2026 - TBA"
         ],
         instagram: "https://www.instagram.com/hifaf_/?hl=en",
+        driveLink: {
+          name: "Carvaan- After Movies/Shots",
+          url: "https://drive.google.com/drive/folders/1Gb_JhNpGytbxHncJyufrw2mM5oIJrqrc"
+        },
         pdfs: [
           { name: "Mountain Sound", file: "1. MOUNTAIN SOUND LAB_compressed.pdf" },
           { name: "Reforge Himalayas", file: "2. REFORGE THE HIMALAYAS_compressed.pdf" },
@@ -633,6 +637,21 @@ const ArtistList = () => {
                       ) : (
                         <button className="btn-primary btn-small" onClick={() => openPdf(artist.id)}>
                           <FileText size={16} /> Deck
+                        </button>
+                      )}
+                      {artist.driveLink && (
+                        <button
+                          className="btn-primary btn-small"
+                          onClick={() => window.open(artist.driveLink.url, '_blank')}
+                        >
+                          <img
+                            src="/images/brands/google-drive.svg"
+                            alt="Google Drive"
+                            width="16"
+                            height="16"
+                            style={{ objectFit: 'contain', flexShrink: 0 }}
+                          />
+                          {artist.driveLink.name}
                         </button>
                       )}
                     </div>
