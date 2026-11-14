@@ -486,6 +486,20 @@ const ArtistList = () => {
         }
       },
       {
+        id: "",
+        name: "Jamie Lever",
+        image: "jamie-lever.jpg",
+        description: "Stand-up comedian, actor, and impressionist known for her electrifying performances.",
+        shows: [
+          "To Be Announced"
+        ],
+        instagram: "https://www.instagram.com/its_jamielever/",
+        sponsorship: {
+          titleSponsor: { status: 'available', label: 'AVAILABLE' },
+          coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+        }
+      },
+      {
         id: "NO WAY Comedy Festival_compressed.pdf",
         name: "NO WAY! Comedy Festival",
         image: "no-way-comedy-festival.jpg",
@@ -515,6 +529,7 @@ const ArtistList = () => {
 
   const openPdf = (filename) => {
     // Open the PDF from the public/pdfs directory
+    if (!filename) return;
     window.open(`/pdfs/${encodeURIComponent(filename)}`, '_blank');
   };
 
@@ -583,7 +598,7 @@ const ArtistList = () => {
             const { grouped, tba } = groupShowsByMonth(artist.shows);
 
             return (
-              <div key={artist.id} className="artist-card expanded-card">
+              <div key={artist.id || artist.name} className="artist-card expanded-card">
                 <div className="artist-header">
                   <div className="artist-image-container">
                     <img

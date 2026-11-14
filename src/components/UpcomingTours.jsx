@@ -475,6 +475,20 @@ const rawArtistsData = [
       titleSponsor: { status: 'available', label: 'AVAILABLE' },
       coPoweredBy: { status: 'available', label: 'AVAILABLE' }
     }
+  },
+  {
+    id: "",
+    name: "Jamie Lever",
+    image: "jamie-lever.jpg",
+    description: "Stand-up comedian, actor, and impressionist known for her electrifying performances.",
+    shows: [
+      "To Be Announced"
+    ],
+    instagram: "https://www.instagram.com/its_jamielever/",
+    sponsorship: {
+      titleSponsor: { status: 'available', label: 'AVAILABLE' },
+      coPoweredBy: { status: 'available', label: 'AVAILABLE' }
+    }
   }
 ];
 
@@ -544,6 +558,7 @@ function groupShowsByMonth(shows) {
 
 export default function UpcomingTours() {
   const openPdf = (filename) => {
+    if (!filename) return;
     window.open(`/pdfs/${encodeURIComponent(filename)}`, '_blank');
   };
 
