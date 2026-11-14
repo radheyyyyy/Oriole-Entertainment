@@ -223,7 +223,7 @@ const ArtistList = () => {
         shows: [
           
           
-      "Nov 15, 2026 - Kedarnath Sahni Auditorium, Delhi",
+  
       "Nov 27, 2026 - Jawaharlal Nehra Memorial Hall, Pune ",
       "Nov 28, 2026 - DOME, Mumbai",
       "Nov 29, 2026 - Dhono Dhanyo Auditorium, Kolkata",
