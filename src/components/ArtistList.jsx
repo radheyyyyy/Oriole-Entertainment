@@ -312,7 +312,6 @@ const ArtistList = () => {
         description: "Observational comedy that hits right at home.",
         shows: [
          
-          "Nov 15, 2026 - Kedarhnath Sahni Auditorium, Delhi",
           "Nov 19, 2026 - Mathura",
           "Nov 20, 2026 - Mumbai",
           "Nov 21, 2026 - YB Chavan Auditorium, Mumbai",
