@@ -113,8 +113,7 @@ const ArtistList = () => {
         image: "harsh-gujral.jpg",
         description: "High-energy standup comedian with great crowd work.",
         shows: [
-          "Nov 19, 2026 - Noida",
-          "Nov 20, 2026 - Raipur",
+          
           "Nov 21, 2026 - Bilaspur",
           "Nov 22, 2026 - Alwar",
           "Nov 27, 2026 - Jawaharlal Nehru Memorial Hall: Pune",
@@ -265,9 +264,6 @@ const ArtistList = () => {
         image: "ravi-gupta.jpg",
         description: "Observational comedy that hits right at home.",
         shows: [
-         
-          "Nov 19, 2026 - Mathura",
-          "Nov 20, 2026 - Mumbai",
           "Nov 21, 2026 - YB Chavan Auditorium, Mumbai",
           "Nov 22, 2026 - Bangalore",
           "Nov 26, 2026 - Amritsar",
