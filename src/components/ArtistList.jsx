@@ -160,7 +160,7 @@ const ArtistList = () => {
         description: "Rising star with a unique blend of storytelling.",
         shows: [
          
-          "Nov 15, 2026 - Indore",
+          "Nov 28, 2026 - DOME SVP Stadium, Mumbai",
           "Dec 6, 2026 - Bengaluru",
           "Dec 18, 2026 - Ahmedabad",
           "Dec 19, 2026 - Vadodara",
